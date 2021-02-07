@@ -16,8 +16,13 @@ namespace e_support_desk
 
         private void New_Perdorues_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'e_supportDataSet.punonjesi' table. You can move, or remove it, as needed.
+            this.punonjesiTableAdapter.Fill(this.e_supportDataSet.punonjesi);
+            // TODO: This line of code loads data into the 'e_supportDataSet.punonjesi' table. You can move, or remove it, as needed.
+            this.punonjesiTableAdapter.Fill(this.e_supportDataSet.punonjesi);
+            // TODO: This line of code loads data into the 'e_supportDataSet.punonjesi' table. You can move, or remove it, as needed.
+            this.punonjesiTableAdapter.Fill(this.e_supportDataSet.punonjesi);
             // TODO: This line of code loads data into the 'e_supportDataSet1.roli' table. You can move, or remove it, as needed.
-            this.roliTableAdapter.Fill(this.e_supportDataSet1.roli);
 
         }
 
@@ -82,6 +87,27 @@ namespace e_support_desk
                     return;
                 }
             }
+        }
+
+        private void punonjesiBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.punonjesiBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.e_supportDataSet);
+
+        }
+
+        private void punonjesiBindingNavigatorSaveItem_Click_1(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.punonjesiBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.e_supportDataSet);
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

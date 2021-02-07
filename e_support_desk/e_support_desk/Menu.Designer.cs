@@ -134,6 +134,7 @@ namespace e_support_desk
             this.btn_regj_paj.TabIndex = 1;
             this.btn_regj_paj.Text = "Pajisje";
             this.btn_regj_paj.UseVisualStyleBackColor = true;
+            this.btn_regj_paj.Click += new System.EventHandler(this.btn_regj_paj_Click);
             // 
             // btn_regj_sher
             // 
@@ -144,6 +145,7 @@ namespace e_support_desk
             this.btn_regj_sher.TabIndex = 0;
             this.btn_regj_sher.Text = "Sherbime";
             this.btn_regj_sher.UseVisualStyleBackColor = true;
+            this.btn_regj_sher.Click += new System.EventHandler(this.btn_regj_sher_Click);
             // 
             // label4
             // 
@@ -184,6 +186,7 @@ namespace e_support_desk
             this.btn_shitje.TabIndex = 8;
             this.btn_shitje.Text = "Shitje";
             this.btn_shitje.UseVisualStyleBackColor = true;
+            this.btn_shitje.Click += new System.EventHandler(this.btn_shitje_Click);
             // 
             // btn_cesh_hapur
             // 

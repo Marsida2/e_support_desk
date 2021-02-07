@@ -5,10 +5,10 @@ using System.Windows.Forms;
 
 namespace e_support_desk
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
         private string conn_string = "Data Source=DESKTOP-JS1HJ89\\SQLEXPRESS01;Initial Catalog=e_support;Integrated Security=True";
-        public Form1()
+        public Login()
         {
             InitializeComponent();
         }

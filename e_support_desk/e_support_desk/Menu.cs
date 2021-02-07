@@ -95,15 +95,40 @@ namespace e_support_desk
         private void btn_regj_pun_Click(object sender, EventArgs e)
         {
             New_Perdorues wind_new_perd = new New_Perdorues(conn_string);
+            this.Visible = false;
             wind_new_perd.ShowDialog();
+            this.Visible = true;
+        }
+
+
+        private void btn_regj_sher_Click(object sender, EventArgs e)
+        {
+            New_Sherbim wind_new_sher = new New_Sherbim(conn_string, roli);
+            this.Visible = false;
+            wind_new_sher.ShowDialog();
+            this.Visible = true;
+        }
+
+
+        private void btn_regj_paj_Click(object sender, EventArgs e)
+        {
+            New_Pajisje wind_new_paj = new New_Pajisje(conn_string, roli);
+            this.Visible = false;
+            wind_new_paj.ShowDialog();
+            this.Visible = true;
         }
 
         private void btn_dil_Click(object sender, EventArgs e)
         {
-            Form1 login = new Form1();
+            Login login = new Login();
             this.Visible = false;
             login.ShowDialog();
             this.Dispose();
+        }
+
+        private void btn_shitje_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

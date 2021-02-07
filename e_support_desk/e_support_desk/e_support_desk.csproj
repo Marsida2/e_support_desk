@@ -51,16 +51,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>e_supportDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="e_supportDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>e_supportDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
@@ -74,16 +69,34 @@
     <Compile Include="New Perdorues.Designer.cs">
       <DependentUpon>New Perdorues.cs</DependentUpon>
     </Compile>
+    <Compile Include="New_Pajisje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New_Pajisje.Designer.cs">
+      <DependentUpon>New_Pajisje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="New_Sherbim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New_Sherbim.Designer.cs">
+      <DependentUpon>New_Sherbim.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="New Perdorues.resx">
       <DependentUpon>New Perdorues.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New_Pajisje.resx">
+      <DependentUpon>New_Pajisje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New_Sherbim.resx">
+      <DependentUpon>New_Sherbim.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -104,17 +117,6 @@
     </None>
     <None Include="e_supportDataSet.xss">
       <DependentUpon>e_supportDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="e_supportDataSet1.xsc">
-      <DependentUpon>e_supportDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="e_supportDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>e_supportDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="e_supportDataSet1.xss">
-      <DependentUpon>e_supportDataSet1.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
