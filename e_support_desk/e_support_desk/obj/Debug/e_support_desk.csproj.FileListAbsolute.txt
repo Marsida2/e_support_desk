@@ -9,3 +9,15 @@ C:\Users\marsi\source\repos\e_support_desk\e_support_desk\obj\Debug\e_support_de
 C:\Users\marsi\source\repos\e_support_desk\e_support_desk\obj\Debug\e_support_desk.exe
 C:\Users\marsi\source\repos\e_support_desk\e_support_desk\obj\Debug\e_support_desk.pdb
 C:\Users\marsi\source\repos\e_support_desk\e_support_desk\obj\Debug\e_support_desk.Menu.resources
+C:\Users\marsi\Desktop\e_support_desk\e_support_desk\e_support_desk\bin\Debug\e_support_desk.exe.config
+C:\Users\marsi\Desktop\e_support_desk\e_support_desk\e_support_desk\bin\Debug\e_support_desk.exe
+C:\Users\marsi\Desktop\e_support_desk\e_support_desk\e_support_desk\bin\Debug\e_support_desk.pdb
+C:\Users\marsi\Desktop\e_support_desk\e_support_desk\e_support_desk\obj\Debug\e_support_desk.csprojAssemblyReference.cache
+C:\Users\marsi\Desktop\e_support_desk\e_support_desk\e_support_desk\obj\Debug\e_support_desk.Form1.resources
+C:\Users\marsi\Desktop\e_support_desk\e_support_desk\e_support_desk\obj\Debug\e_support_desk.Menu.resources
+C:\Users\marsi\Desktop\e_support_desk\e_support_desk\e_support_desk\obj\Debug\e_support_desk.New_Perdorues.resources
+C:\Users\marsi\Desktop\e_support_desk\e_support_desk\e_support_desk\obj\Debug\e_support_desk.Properties.Resources.resources
+C:\Users\marsi\Desktop\e_support_desk\e_support_desk\e_support_desk\obj\Debug\e_support_desk.csproj.GenerateResource.cache
+C:\Users\marsi\Desktop\e_support_desk\e_support_desk\e_support_desk\obj\Debug\e_support_desk.csproj.CoreCompileInputs.cache
+C:\Users\marsi\Desktop\e_support_desk\e_support_desk\e_support_desk\obj\Debug\e_support_desk.exe
+C:\Users\marsi\Desktop\e_support_desk\e_support_desk\e_support_desk\obj\Debug\e_support_desk.pdb

@@ -29,7 +29,7 @@ namespace e_support_desk
             {
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = conn;
-                cmd.CommandText = "get_user";
+                cmd.CommandText = "get_user_id";
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("email", email.Text);
                 cmd.Parameters.AddWithValue("fjalekalimi", fjalekalimi.Text);
@@ -53,7 +53,7 @@ namespace e_support_desk
 
                 //ekziston useri
                 //do te hapet forma e rradhes
-                MessageBox.Show(this, "id_punonjesi "+id_punonjesi, "Sukses");
+                //MessageBox.Show(this, "id_punonjesi "+id_punonjesi, "Sukses");
                 Menu menu = new Menu(id_punonjesi, conn_string);
                 this.Visible = false;
                 menu.ShowDialog();
