@@ -23,3 +23,6 @@ C:\Users\marsi\Desktop\e_support_desk\e_support_desk\e_support_desk\obj\Debug\e_
 C:\Users\marsi\Desktop\e_support_desk\e_support_desk\e_support_desk\obj\Debug\e_support_desk.New_Sherbim.resources
 C:\Users\marsi\Desktop\e_support_desk\e_support_desk\e_support_desk\obj\Debug\e_support_desk.New_Pajisje.resources
 C:\Users\marsi\Desktop\e_support_desk\e_support_desk\e_support_desk\obj\Debug\e_support_desk.Login.resources
+C:\Users\marsi\Desktop\e_support_desk\e_support_desk\e_support_desk\obj\Debug\e_support_desk.Faturim.resources
+C:\Users\marsi\Desktop\e_support_desk\e_support_desk\e_support_desk\obj\Debug\e_support_desk.New_Klient.resources
+C:\Users\marsi\Desktop\e_support_desk\e_support_desk\e_support_desk\obj\Debug\e_support_desk.New_Ceshtje.resources

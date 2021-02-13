@@ -66,7 +66,7 @@ namespace e_support_desk
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void sherbimiBindingNavigatorSaveItem_Click(object sender, EventArgs e)

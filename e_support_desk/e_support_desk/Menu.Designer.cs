@@ -170,12 +170,13 @@ namespace e_support_desk
             // btn_hap_cesh
             // 
             this.btn_hap_cesh.Font = new System.Drawing.Font("MS Reference Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_hap_cesh.Location = new System.Drawing.Point(794, 241);
+            this.btn_hap_cesh.Location = new System.Drawing.Point(794, 340);
             this.btn_hap_cesh.Name = "btn_hap_cesh";
             this.btn_hap_cesh.Size = new System.Drawing.Size(386, 64);
             this.btn_hap_cesh.TabIndex = 3;
             this.btn_hap_cesh.Text = "Hap ceshtje";
             this.btn_hap_cesh.UseVisualStyleBackColor = true;
+            this.btn_hap_cesh.Click += new System.EventHandler(this.btn_hap_cesh_Click);
             // 
             // btn_shitje
             // 
@@ -184,14 +185,14 @@ namespace e_support_desk
             this.btn_shitje.Name = "btn_shitje";
             this.btn_shitje.Size = new System.Drawing.Size(386, 64);
             this.btn_shitje.TabIndex = 8;
-            this.btn_shitje.Text = "Shitje";
+            this.btn_shitje.Text = "Faturo";
             this.btn_shitje.UseVisualStyleBackColor = true;
             this.btn_shitje.Click += new System.EventHandler(this.btn_shitje_Click);
             // 
             // btn_cesh_hapur
             // 
             this.btn_cesh_hapur.Font = new System.Drawing.Font("MS Reference Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_cesh_hapur.Location = new System.Drawing.Point(794, 342);
+            this.btn_cesh_hapur.Location = new System.Drawing.Point(794, 238);
             this.btn_cesh_hapur.Name = "btn_cesh_hapur";
             this.btn_cesh_hapur.Size = new System.Drawing.Size(386, 64);
             this.btn_cesh_hapur.TabIndex = 9;

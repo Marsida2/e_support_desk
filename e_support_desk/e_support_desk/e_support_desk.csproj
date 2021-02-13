@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,11 +47,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class1.cs" />
     <Compile Include="e_supportDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>e_supportDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Faturim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Faturim.Designer.cs">
+      <DependentUpon>Faturim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Klient.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +78,18 @@
     <Compile Include="New Perdorues.Designer.cs">
       <DependentUpon>New Perdorues.cs</DependentUpon>
     </Compile>
+    <Compile Include="New_Ceshtje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New_Ceshtje.Designer.cs">
+      <DependentUpon>New_Ceshtje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="New_Klient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New_Klient.Designer.cs">
+      <DependentUpon>New_Klient.cs</DependentUpon>
+    </Compile>
     <Compile Include="New_Pajisje.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +104,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Faturim.resx">
+      <DependentUpon>Faturim.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -91,6 +115,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="New Perdorues.resx">
       <DependentUpon>New Perdorues.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New_Ceshtje.resx">
+      <DependentUpon>New_Ceshtje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New_Klient.resx">
+      <DependentUpon>New_Klient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="New_Pajisje.resx">
       <DependentUpon>New_Pajisje.cs</DependentUpon>

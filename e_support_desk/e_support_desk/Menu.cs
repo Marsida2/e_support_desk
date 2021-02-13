@@ -28,6 +28,7 @@ namespace e_support_desk
             if(roli != 1)
             {
                 btn_regj_pun.Enabled = false;
+                btn_raporte.Enabled = false;
             }
         }
 
@@ -128,7 +129,18 @@ namespace e_support_desk
 
         private void btn_shitje_Click(object sender, EventArgs e)
         {
+            Faturim fat = new Faturim(conn_string, id_perdoruesi);
+            this.Visible = false;
+            fat.ShowDialog();
+            this.Visible = true;
+        }
 
+        private void btn_hap_cesh_Click(object sender, EventArgs e)
+        {
+            New_Ceshtje ticket_window = new New_Ceshtje(conn_string);
+            this.Visible = false;
+            ticket_window.ShowDialog();
+            this.Visible = true;
         }
     }
 }
