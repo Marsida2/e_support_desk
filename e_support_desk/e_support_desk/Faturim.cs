@@ -160,7 +160,7 @@ namespace e_support_desk
 
         private void btn_faturo_Click(object sender, EventArgs e)
         {
-            if (cb_klienti.SelectedValue != "0" && id_shitje != 0)
+            if ((string)cb_klienti.SelectedValue != "0" && id_shitje != 0)
             {
                 using (SqlConnection conn = new SqlConnection(conn_string))
                 {

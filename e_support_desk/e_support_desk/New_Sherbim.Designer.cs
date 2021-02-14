@@ -170,9 +170,7 @@ namespace e_support_desk
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.ceshtjaTableAdapter = null;
-            this.tableAdapterManager.delegimTableAdapter = null;
             this.tableAdapterManager.dokumentimTableAdapter = null;
-            this.tableAdapterManager.faturaTableAdapter = null;
             this.tableAdapterManager.klientiTableAdapter = null;
             this.tableAdapterManager.pajisjaTableAdapter = null;
             this.tableAdapterManager.prioritetiTableAdapter = null;

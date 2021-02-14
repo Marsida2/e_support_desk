@@ -198,6 +198,7 @@ namespace e_support_desk
             this.btn_cesh_hapur.TabIndex = 9;
             this.btn_cesh_hapur.Text = "Ceshtje ekzistente";
             this.btn_cesh_hapur.UseVisualStyleBackColor = true;
+            this.btn_cesh_hapur.Click += new System.EventHandler(this.btn_cesh_hapur_Click);
             // 
             // btn_dil
             // 

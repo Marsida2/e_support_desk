@@ -91,6 +91,8 @@ namespace e_support_desk
         private void Menu_Load(object sender, EventArgs e)
         {
             //MessageBox.Show(this, "Id: " + id_perdoruesi, "welcome");
+            Mailer mailer = new Mailer();
+            mailer.Fillo();
         }
 
         private void btn_regj_pun_Click(object sender, EventArgs e)
@@ -140,6 +142,14 @@ namespace e_support_desk
             New_Ceshtje ticket_window = new New_Ceshtje(conn_string);
             this.Visible = false;
             ticket_window.ShowDialog();
+            this.Visible = true;
+        }
+
+        private void btn_cesh_hapur_Click(object sender, EventArgs e)
+        {
+            Ceshtje ceshtjet = new Ceshtje(conn_string);
+            this.Visible = false;
+            ceshtjet.ShowDialog();
             this.Visible = true;
         }
     }

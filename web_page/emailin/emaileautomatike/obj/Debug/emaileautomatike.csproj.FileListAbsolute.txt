@@ -1,0 +1,15 @@
+C:\Users\marsi\Desktop\e_support_desk\web_page\emailin\emaileautomatike\obj\Debug\emaileautomatike.csprojAssemblyReference.cache
+C:\Users\marsi\Desktop\e_support_desk\web_page\emailin\emaileautomatike\obj\Debug\emaileautomatike.Form1.resources
+C:\Users\marsi\Desktop\e_support_desk\web_page\emailin\emaileautomatike\obj\Debug\emaileautomatike.Properties.Resources.resources
+C:\Users\marsi\Desktop\e_support_desk\web_page\emailin\emaileautomatike\obj\Debug\emaileautomatike.csproj.GenerateResource.cache
+C:\Users\marsi\Desktop\e_support_desk\web_page\emailin\emaileautomatike\obj\Debug\emaileautomatike.csproj.CoreCompileInputs.cache
+C:\Users\marsi\Desktop\e_support_desk\web_page\emailin\emaileautomatike\bin\Debug\emaileautomatike.exe.config
+C:\Users\marsi\Desktop\e_support_desk\web_page\emailin\emaileautomatike\bin\Debug\emaileautomatike.exe
+C:\Users\marsi\Desktop\e_support_desk\web_page\emailin\emaileautomatike\bin\Debug\emaileautomatike.pdb
+C:\Users\marsi\Desktop\e_support_desk\web_page\emailin\emaileautomatike\bin\Debug\S22.Imap.dll
+C:\Users\marsi\Desktop\e_support_desk\web_page\emailin\emaileautomatike\bin\Debug\S22.Imap.xml
+C:\Users\marsi\Desktop\e_support_desk\web_page\emailin\emaileautomatike\obj\Debug\emaileautomatike.csproj.CopyComplete
+C:\Users\marsi\Desktop\e_support_desk\web_page\emailin\emaileautomatike\obj\Debug\emaileautomatike.exe
+C:\Users\marsi\Desktop\e_support_desk\web_page\emailin\emaileautomatike\obj\Debug\emaileautomatike.pdb
+C:\Users\marsi\Desktop\e_support_desk\web_page\emailin\emaileautomatike\bin\Debug\Mail.dll
+C:\Users\marsi\Desktop\e_support_desk\web_page\emailin\emaileautomatike\bin\Debug\Mail.xml

@@ -26,3 +26,9 @@ C:\Users\marsi\Desktop\e_support_desk\e_support_desk\e_support_desk\obj\Debug\e_
 C:\Users\marsi\Desktop\e_support_desk\e_support_desk\e_support_desk\obj\Debug\e_support_desk.Faturim.resources
 C:\Users\marsi\Desktop\e_support_desk\e_support_desk\e_support_desk\obj\Debug\e_support_desk.New_Klient.resources
 C:\Users\marsi\Desktop\e_support_desk\e_support_desk\e_support_desk\obj\Debug\e_support_desk.New_Ceshtje.resources
+C:\Users\marsi\Desktop\e_support_desk\e_support_desk\e_support_desk\obj\Debug\e_support_desk.Ceshtje.resources
+C:\Users\marsi\Desktop\e_support_desk\e_support_desk\e_support_desk\bin\Debug\Mail.dll
+C:\Users\marsi\Desktop\e_support_desk\e_support_desk\e_support_desk\bin\Debug\S22.Imap.dll
+C:\Users\marsi\Desktop\e_support_desk\e_support_desk\e_support_desk\bin\Debug\Mail.xml
+C:\Users\marsi\Desktop\e_support_desk\e_support_desk\e_support_desk\bin\Debug\S22.Imap.xml
+C:\Users\marsi\Desktop\e_support_desk\e_support_desk\e_support_desk\obj\Debug\e_support_desk.csproj.CopyComplete

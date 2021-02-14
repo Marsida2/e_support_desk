@@ -36,28 +36,28 @@ namespace e_support_desk
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btn_krijo_account = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.e_supportDataSet = new e_support_desk.e_supportDataSet();
             this.klientiBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.klientiTableAdapter = new e_support_desk.e_supportDataSetTableAdapters.klientiTableAdapter();
             this.tableAdapterManager = new e_support_desk.e_supportDataSetTableAdapters.TableAdapterManager();
             this.klientiBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.klientiBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.klientiDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -81,6 +81,7 @@ namespace e_support_desk
             this.button1.TabIndex = 13;
             this.button1.Text = "Kthehu";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // groupBox1
             // 
@@ -130,6 +131,16 @@ namespace e_support_desk
             this.label1.Size = new System.Drawing.Size(59, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "Emri";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(25, 120);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(93, 26);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Mbiemri";
             // 
             // textBox4
             // 
@@ -187,16 +198,6 @@ namespace e_support_desk
             this.label5.Size = new System.Drawing.Size(0, 26);
             this.label5.TabIndex = 4;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(25, 120);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 26);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Mbiemri";
-            // 
             // e_supportDataSet
             // 
             this.e_supportDataSet.DataSetName = "e_supportDataSet";
@@ -215,15 +216,17 @@ namespace e_support_desk
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.ceshtjaTableAdapter = null;
-            this.tableAdapterManager.delegimTableAdapter = null;
             this.tableAdapterManager.dokumentimTableAdapter = null;
-            this.tableAdapterManager.faturaTableAdapter = null;
+            this.tableAdapterManager.fatureTableAdapter = null;
             this.tableAdapterManager.klientiTableAdapter = this.klientiTableAdapter;
+            this.tableAdapterManager.krk_delegimTableAdapter = null;
+            this.tableAdapterManager.krk_sh_afatiTableAdapter = null;
             this.tableAdapterManager.pajisjaTableAdapter = null;
             this.tableAdapterManager.prioritetiTableAdapter = null;
             this.tableAdapterManager.punonjesiTableAdapter = null;
             this.tableAdapterManager.roliTableAdapter = null;
             this.tableAdapterManager.sherbimiTableAdapter = null;
+            this.tableAdapterManager.shitjeTableAdapter = null;
             this.tableAdapterManager.statusiTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = e_support_desk.e_supportDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
@@ -256,6 +259,23 @@ namespace e_support_desk
             this.klientiBindingNavigator.Size = new System.Drawing.Size(1254, 33);
             this.klientiBindingNavigator.TabIndex = 15;
             this.klientiBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(54, 28);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Enabled = false;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(34, 28);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -290,16 +310,9 @@ namespace e_support_desk
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(54, 28);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 33);
             // 
             // bindingNavigatorMoveNextItem
@@ -322,18 +335,8 @@ namespace e_support_desk
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 33);
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Enabled = false;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(34, 28);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // klientiBindingNavigatorSaveItem
             // 

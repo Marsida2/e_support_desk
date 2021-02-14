@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "emailin/1.0.0": {
+        "dependencies": {
+          "S22.Imap": "2.3.4642.38217"
+        },
+        "runtime": {
+          "emailin.dll": {}
+        }
+      },
+      "S22.Imap/2.3.4642.38217": {
+        "runtime": {
+          "S22.Imap.dll": {
+            "assemblyVersion": "2.3.4642.38217",
+            "fileVersion": "2.3.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "emailin/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "S22.Imap/2.3.4642.38217": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
