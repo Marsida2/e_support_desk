@@ -13,27 +13,27 @@
 <body>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <!-- Brand -->
-  <a class="navbar-brand" href="#"><img src="e2.png" width="30px" /> SUPPORT</a>
+  <a class="navbar-brand" href="RrethNesh.aspx"><img src="Images\e3.png" width="30px" /> SUPPORT</a>
 
   <!-- Links -->
   <ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link" href="#">Login</a>
-    </li>
-
+   
     <!-- Dropdown -->
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
         Katalogje
       </a>
       <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Sherbime</a>
-        <a class="dropdown-item" href="#">Pajisje</a>
+        <a class="dropdown-item" href="#div_sherbimet">Sherbime</a>
+        <a class="dropdown-item" href="#div_pajisjet">Pajisje</a>
       </div>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="Login.aspx">Login</a>
     </li>
   </ul>
 </nav>
-<br>
+</br>
     <div class="jumbotron text-center" >
         <h1 id="df">Online E-Support</h1>
         <p>Te ne do te gjeni sherbimin me te mire!</p>

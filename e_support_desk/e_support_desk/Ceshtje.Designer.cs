@@ -29,470 +29,413 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ceshtje));
-            System.Windows.Forms.Label id_ceshtjeLabel;
-            System.Windows.Forms.Label id_klientiLabel;
-            System.Windows.Forms.Label id_pergjegjesiLabel;
-            System.Windows.Forms.Label id_sherbimiLabel;
-            System.Windows.Forms.Label prioritetiLabel;
-            System.Windows.Forms.Label statusiLabel;
-            System.Windows.Forms.Label garanciLabel;
-            System.Windows.Forms.Label raportiLabel;
-            System.Windows.Forms.Label problemiLabel;
-            System.Windows.Forms.Label afati_kohor1Label;
+            this.gb_afatshtyrje = new System.Windows.Forms.GroupBox();
+            this.btn_shtyj = new System.Windows.Forms.Button();
+            this.dt_kerkese = new System.Windows.Forms.DateTimePicker();
+            this.gb_delegim = new System.Windows.Forms.GroupBox();
+            this.btn_delego = new System.Windows.Forms.Button();
+            this.cb_pergjegjesit = new System.Windows.Forms.ComboBox();
+            this.punonjesinfoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.esupportDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.e_supportDataSet = new e_support_desk.e_supportDataSet();
-            this.ceshtjaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ceshtjaTableAdapter = new e_support_desk.e_supportDataSetTableAdapters.ceshtjaTableAdapter();
-            this.tableAdapterManager = new e_support_desk.e_supportDataSetTableAdapters.TableAdapterManager();
-            this.ceshtjaBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.ceshtjaBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.id_ceshtjeTextBox = new System.Windows.Forms.TextBox();
-            this.id_klientiTextBox = new System.Windows.Forms.TextBox();
-            this.id_pergjegjesiTextBox = new System.Windows.Forms.TextBox();
-            this.id_sherbimiTextBox = new System.Windows.Forms.TextBox();
-            this.prioritetiTextBox = new System.Windows.Forms.TextBox();
-            this.statusiTextBox = new System.Windows.Forms.TextBox();
-            this.garanciTextBox = new System.Windows.Forms.TextBox();
-            this.raportiTextBox = new System.Windows.Forms.TextBox();
-            this.problemiTextBox = new System.Windows.Forms.TextBox();
-            this.afati_kohor1DateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.punonjesiBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.btn_kthehu = new System.Windows.Forms.Button();
+            this.cb_statusi = new System.Windows.Forms.ComboBox();
+            this.statusiBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label4 = new System.Windows.Forms.Label();
+            this.txt_problemi = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.btn_faturo = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            id_ceshtjeLabel = new System.Windows.Forms.Label();
-            id_klientiLabel = new System.Windows.Forms.Label();
-            id_pergjegjesiLabel = new System.Windows.Forms.Label();
-            id_sherbimiLabel = new System.Windows.Forms.Label();
-            prioritetiLabel = new System.Windows.Forms.Label();
-            statusiLabel = new System.Windows.Forms.Label();
-            garanciLabel = new System.Windows.Forms.Label();
-            raportiLabel = new System.Windows.Forms.Label();
-            problemiLabel = new System.Windows.Forms.Label();
-            afati_kohor1Label = new System.Windows.Forms.Label();
+            this.rb_gjitha = new System.Windows.Forms.RadioButton();
+            this.rb_zgjidhur = new System.Windows.Forms.RadioButton();
+            this.rb_mbyllur = new System.Windows.Forms.RadioButton();
+            this.rb_vonese = new System.Windows.Forms.RadioButton();
+            this.rb_aktive = new System.Windows.Forms.RadioButton();
+            this.btn_raport = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cb_prioriteti = new System.Windows.Forms.ComboBox();
+            this.prioritetiBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.grid_analize_ceshtjesh = new System.Windows.Forms.DataGridView();
+            this.statusiTableAdapter = new e_support_desk.e_supportDataSetTableAdapters.statusiTableAdapter();
+            this.prioritetiTableAdapter = new e_support_desk.e_supportDataSetTableAdapters.prioritetiTableAdapter();
+            this.btn_update = new System.Windows.Forms.Button();
+            this.punonjesiTableAdapter = new e_support_desk.e_supportDataSetTableAdapters.punonjesiTableAdapter();
+            this.punonjes_infoTableAdapter = new e_support_desk.e_supportDataSetTableAdapters.punonjes_infoTableAdapter();
+            this.gb_afatshtyrje.SuspendLayout();
+            this.gb_delegim.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.punonjesinfoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.esupportDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.e_supportDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ceshtjaBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ceshtjaBindingNavigator)).BeginInit();
-            this.ceshtjaBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.punonjesiBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.statusiBindingSource)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.prioritetiBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_analize_ceshtjesh)).BeginInit();
             this.SuspendLayout();
+            // 
+            // gb_afatshtyrje
+            // 
+            this.gb_afatshtyrje.Controls.Add(this.btn_shtyj);
+            this.gb_afatshtyrje.Controls.Add(this.dt_kerkese);
+            this.gb_afatshtyrje.Location = new System.Drawing.Point(34, 580);
+            this.gb_afatshtyrje.Name = "gb_afatshtyrje";
+            this.gb_afatshtyrje.Size = new System.Drawing.Size(416, 135);
+            this.gb_afatshtyrje.TabIndex = 1;
+            this.gb_afatshtyrje.TabStop = false;
+            this.gb_afatshtyrje.Text = "Kerkese afatshtyrje";
+            // 
+            // btn_shtyj
+            // 
+            this.btn_shtyj.Location = new System.Drawing.Point(24, 45);
+            this.btn_shtyj.Name = "btn_shtyj";
+            this.btn_shtyj.Size = new System.Drawing.Size(96, 50);
+            this.btn_shtyj.TabIndex = 2;
+            this.btn_shtyj.Text = "Shtyj";
+            this.btn_shtyj.UseVisualStyleBackColor = true;
+            this.btn_shtyj.Click += new System.EventHandler(this.btn_shtyj_Click);
+            // 
+            // dt_kerkese
+            // 
+            this.dt_kerkese.Location = new System.Drawing.Point(148, 55);
+            this.dt_kerkese.Name = "dt_kerkese";
+            this.dt_kerkese.Size = new System.Drawing.Size(233, 26);
+            this.dt_kerkese.TabIndex = 0;
+            // 
+            // gb_delegim
+            // 
+            this.gb_delegim.Controls.Add(this.btn_delego);
+            this.gb_delegim.Controls.Add(this.cb_pergjegjesit);
+            this.gb_delegim.Location = new System.Drawing.Point(487, 580);
+            this.gb_delegim.Name = "gb_delegim";
+            this.gb_delegim.Size = new System.Drawing.Size(438, 135);
+            this.gb_delegim.TabIndex = 2;
+            this.gb_delegim.TabStop = false;
+            this.gb_delegim.Text = "Kerkese delegimi";
+            // 
+            // btn_delego
+            // 
+            this.btn_delego.Location = new System.Drawing.Point(33, 45);
+            this.btn_delego.Name = "btn_delego";
+            this.btn_delego.Size = new System.Drawing.Size(95, 50);
+            this.btn_delego.TabIndex = 29;
+            this.btn_delego.Text = "Delego";
+            this.btn_delego.UseVisualStyleBackColor = true;
+            this.btn_delego.Click += new System.EventHandler(this.btn_delego_Click);
+            // 
+            // cb_pergjegjesit
+            // 
+            this.cb_pergjegjesit.DataSource = this.punonjesinfoBindingSource;
+            this.cb_pergjegjesit.DisplayMember = "punonjesi";
+            this.cb_pergjegjesit.FormattingEnabled = true;
+            this.cb_pergjegjesit.Location = new System.Drawing.Point(159, 55);
+            this.cb_pergjegjesit.Name = "cb_pergjegjesit";
+            this.cb_pergjegjesit.Size = new System.Drawing.Size(244, 28);
+            this.cb_pergjegjesit.TabIndex = 0;
+            this.cb_pergjegjesit.ValueMember = "id_punonjesi";
+            // 
+            // punonjesinfoBindingSource
+            // 
+            this.punonjesinfoBindingSource.DataMember = "punonjes_info";
+            this.punonjesinfoBindingSource.DataSource = this.esupportDataSetBindingSource;
+            // 
+            // esupportDataSetBindingSource
+            // 
+            this.esupportDataSetBindingSource.DataSource = this.e_supportDataSet;
+            this.esupportDataSetBindingSource.Position = 0;
             // 
             // e_supportDataSet
             // 
             this.e_supportDataSet.DataSetName = "e_supportDataSet";
             this.e_supportDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // ceshtjaBindingSource
-            // 
-            this.ceshtjaBindingSource.DataMember = "ceshtja";
-            this.ceshtjaBindingSource.DataSource = this.e_supportDataSet;
-            // 
-            // ceshtjaTableAdapter
-            // 
-            this.ceshtjaTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.ceshtjaTableAdapter = this.ceshtjaTableAdapter;
-            this.tableAdapterManager.dokumentimTableAdapter = null;
-            this.tableAdapterManager.fatureTableAdapter = null;
-            this.tableAdapterManager.klientiTableAdapter = null;
-            this.tableAdapterManager.krk_delegimTableAdapter = null;
-            this.tableAdapterManager.krk_sh_afatiTableAdapter = null;
-            this.tableAdapterManager.pajisjaTableAdapter = null;
-            this.tableAdapterManager.prioritetiTableAdapter = null;
-            this.tableAdapterManager.punonjesiTableAdapter = null;
-            this.tableAdapterManager.roliTableAdapter = null;
-            this.tableAdapterManager.sherbimiTableAdapter = null;
-            this.tableAdapterManager.shitjeTableAdapter = null;
-            this.tableAdapterManager.statusiTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = e_support_desk.e_supportDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
-            // ceshtjaBindingNavigator
-            // 
-            this.ceshtjaBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.ceshtjaBindingNavigator.BindingSource = this.ceshtjaBindingSource;
-            this.ceshtjaBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.ceshtjaBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.ceshtjaBindingNavigator.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.ceshtjaBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bindingNavigatorMoveFirstItem,
-            this.bindingNavigatorMovePreviousItem,
-            this.bindingNavigatorSeparator,
-            this.bindingNavigatorPositionItem,
-            this.bindingNavigatorCountItem,
-            this.bindingNavigatorSeparator1,
-            this.bindingNavigatorMoveNextItem,
-            this.bindingNavigatorMoveLastItem,
-            this.bindingNavigatorSeparator2,
-            this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem,
-            this.ceshtjaBindingNavigatorSaveItem});
-            this.ceshtjaBindingNavigator.Location = new System.Drawing.Point(0, 0);
-            this.ceshtjaBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.ceshtjaBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.ceshtjaBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.ceshtjaBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.ceshtjaBindingNavigator.Name = "ceshtjaBindingNavigator";
-            this.ceshtjaBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.ceshtjaBindingNavigator.Size = new System.Drawing.Size(1254, 33);
-            this.ceshtjaBindingNavigator.TabIndex = 0;
-            this.ceshtjaBindingNavigator.Text = "bindingNavigator1";
-            // 
-            // bindingNavigatorMoveFirstItem
-            // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(34, 20);
-            this.bindingNavigatorMoveFirstItem.Text = "Move first";
-            // 
-            // bindingNavigatorMovePreviousItem
-            // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(34, 20);
-            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
-            // 
-            // bindingNavigatorSeparator
-            // 
-            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorPositionItem
-            // 
-            this.bindingNavigatorPositionItem.AccessibleName = "Position";
-            this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 31);
-            this.bindingNavigatorPositionItem.Text = "0";
-            this.bindingNavigatorPositionItem.ToolTipText = "Current position";
-            // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(54, 25);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
-            // bindingNavigatorSeparator1
-            // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
-            // 
-            // bindingNavigatorMoveNextItem
-            // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(34, 28);
-            this.bindingNavigatorMoveNextItem.Text = "Move next";
-            // 
-            // bindingNavigatorMoveLastItem
-            // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(34, 28);
-            this.bindingNavigatorMoveLastItem.Text = "Move last";
-            // 
-            // bindingNavigatorSeparator2
-            // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(34, 28);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(34, 28);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
-            // 
-            // ceshtjaBindingNavigatorSaveItem
-            // 
-            this.ceshtjaBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.ceshtjaBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("ceshtjaBindingNavigatorSaveItem.Image")));
-            this.ceshtjaBindingNavigatorSaveItem.Name = "ceshtjaBindingNavigatorSaveItem";
-            this.ceshtjaBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
-            this.ceshtjaBindingNavigatorSaveItem.Text = "Save Data";
-            this.ceshtjaBindingNavigatorSaveItem.Click += new System.EventHandler(this.ceshtjaBindingNavigatorSaveItem_Click_1);
-            // 
-            // id_ceshtjeLabel
-            // 
-            id_ceshtjeLabel.AutoSize = true;
-            id_ceshtjeLabel.Location = new System.Drawing.Point(64, 77);
-            id_ceshtjeLabel.Name = "id_ceshtjeLabel";
-            id_ceshtjeLabel.Size = new System.Drawing.Size(80, 20);
-            id_ceshtjeLabel.TabIndex = 1;
-            id_ceshtjeLabel.Text = "id ceshtje:";
-            // 
-            // id_ceshtjeTextBox
-            // 
-            this.id_ceshtjeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ceshtjaBindingSource, "id_ceshtje", true));
-            this.id_ceshtjeTextBox.Location = new System.Drawing.Point(175, 74);
-            this.id_ceshtjeTextBox.Name = "id_ceshtjeTextBox";
-            this.id_ceshtjeTextBox.Size = new System.Drawing.Size(385, 26);
-            this.id_ceshtjeTextBox.TabIndex = 2;
-            // 
-            // id_klientiLabel
-            // 
-            id_klientiLabel.AutoSize = true;
-            id_klientiLabel.Location = new System.Drawing.Point(64, 109);
-            id_klientiLabel.Name = "id_klientiLabel";
-            id_klientiLabel.Size = new System.Drawing.Size(69, 20);
-            id_klientiLabel.TabIndex = 3;
-            id_klientiLabel.Text = "id klienti:";
-            // 
-            // id_klientiTextBox
-            // 
-            this.id_klientiTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ceshtjaBindingSource, "id_klienti", true));
-            this.id_klientiTextBox.Location = new System.Drawing.Point(175, 106);
-            this.id_klientiTextBox.Name = "id_klientiTextBox";
-            this.id_klientiTextBox.Size = new System.Drawing.Size(385, 26);
-            this.id_klientiTextBox.TabIndex = 4;
-            // 
-            // id_pergjegjesiLabel
-            // 
-            id_pergjegjesiLabel.AutoSize = true;
-            id_pergjegjesiLabel.Location = new System.Drawing.Point(64, 141);
-            id_pergjegjesiLabel.Name = "id_pergjegjesiLabel";
-            id_pergjegjesiLabel.Size = new System.Drawing.Size(105, 20);
-            id_pergjegjesiLabel.TabIndex = 5;
-            id_pergjegjesiLabel.Text = "id pergjegjesi:";
-            // 
-            // id_pergjegjesiTextBox
-            // 
-            this.id_pergjegjesiTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ceshtjaBindingSource, "id_pergjegjesi", true));
-            this.id_pergjegjesiTextBox.Location = new System.Drawing.Point(175, 138);
-            this.id_pergjegjesiTextBox.Name = "id_pergjegjesiTextBox";
-            this.id_pergjegjesiTextBox.Size = new System.Drawing.Size(385, 26);
-            this.id_pergjegjesiTextBox.TabIndex = 6;
-            // 
-            // id_sherbimiLabel
-            // 
-            id_sherbimiLabel.AutoSize = true;
-            id_sherbimiLabel.Location = new System.Drawing.Point(64, 173);
-            id_sherbimiLabel.Name = "id_sherbimiLabel";
-            id_sherbimiLabel.Size = new System.Drawing.Size(88, 20);
-            id_sherbimiLabel.TabIndex = 7;
-            id_sherbimiLabel.Text = "id sherbimi:";
-            // 
-            // id_sherbimiTextBox
-            // 
-            this.id_sherbimiTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ceshtjaBindingSource, "id_sherbimi", true));
-            this.id_sherbimiTextBox.Location = new System.Drawing.Point(175, 170);
-            this.id_sherbimiTextBox.Name = "id_sherbimiTextBox";
-            this.id_sherbimiTextBox.Size = new System.Drawing.Size(385, 26);
-            this.id_sherbimiTextBox.TabIndex = 8;
-            // 
-            // prioritetiLabel
-            // 
-            prioritetiLabel.AutoSize = true;
-            prioritetiLabel.Location = new System.Drawing.Point(64, 205);
-            prioritetiLabel.Name = "prioritetiLabel";
-            prioritetiLabel.Size = new System.Drawing.Size(69, 20);
-            prioritetiLabel.TabIndex = 9;
-            prioritetiLabel.Text = "prioriteti:";
-            // 
-            // prioritetiTextBox
-            // 
-            this.prioritetiTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ceshtjaBindingSource, "prioriteti", true));
-            this.prioritetiTextBox.Location = new System.Drawing.Point(175, 202);
-            this.prioritetiTextBox.Name = "prioritetiTextBox";
-            this.prioritetiTextBox.Size = new System.Drawing.Size(385, 26);
-            this.prioritetiTextBox.TabIndex = 10;
-            // 
-            // statusiLabel
-            // 
-            statusiLabel.AutoSize = true;
-            statusiLabel.Location = new System.Drawing.Point(64, 237);
-            statusiLabel.Name = "statusiLabel";
-            statusiLabel.Size = new System.Drawing.Size(60, 20);
-            statusiLabel.TabIndex = 11;
-            statusiLabel.Text = "statusi:";
-            // 
-            // statusiTextBox
-            // 
-            this.statusiTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ceshtjaBindingSource, "statusi", true));
-            this.statusiTextBox.Location = new System.Drawing.Point(175, 234);
-            this.statusiTextBox.Name = "statusiTextBox";
-            this.statusiTextBox.Size = new System.Drawing.Size(385, 26);
-            this.statusiTextBox.TabIndex = 12;
-            // 
-            // garanciLabel
-            // 
-            garanciLabel.AutoSize = true;
-            garanciLabel.Location = new System.Drawing.Point(64, 269);
-            garanciLabel.Name = "garanciLabel";
-            garanciLabel.Size = new System.Drawing.Size(65, 20);
-            garanciLabel.TabIndex = 13;
-            garanciLabel.Text = "garanci:";
-            // 
-            // garanciTextBox
-            // 
-            this.garanciTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ceshtjaBindingSource, "garanci", true));
-            this.garanciTextBox.Location = new System.Drawing.Point(175, 266);
-            this.garanciTextBox.Name = "garanciTextBox";
-            this.garanciTextBox.Size = new System.Drawing.Size(385, 26);
-            this.garanciTextBox.TabIndex = 14;
-            // 
-            // raportiLabel
-            // 
-            raportiLabel.AutoSize = true;
-            raportiLabel.Location = new System.Drawing.Point(64, 301);
-            raportiLabel.Name = "raportiLabel";
-            raportiLabel.Size = new System.Drawing.Size(58, 20);
-            raportiLabel.TabIndex = 15;
-            raportiLabel.Text = "raporti:";
-            // 
-            // raportiTextBox
-            // 
-            this.raportiTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ceshtjaBindingSource, "raporti", true));
-            this.raportiTextBox.Location = new System.Drawing.Point(175, 298);
-            this.raportiTextBox.Name = "raportiTextBox";
-            this.raportiTextBox.Size = new System.Drawing.Size(385, 26);
-            this.raportiTextBox.TabIndex = 16;
-            // 
-            // problemiLabel
-            // 
-            problemiLabel.AutoSize = true;
-            problemiLabel.Location = new System.Drawing.Point(64, 333);
-            problemiLabel.Name = "problemiLabel";
-            problemiLabel.Size = new System.Drawing.Size(73, 20);
-            problemiLabel.TabIndex = 17;
-            problemiLabel.Text = "problemi:";
-            // 
-            // problemiTextBox
-            // 
-            this.problemiTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ceshtjaBindingSource, "problemi", true));
-            this.problemiTextBox.Location = new System.Drawing.Point(175, 330);
-            this.problemiTextBox.Name = "problemiTextBox";
-            this.problemiTextBox.Size = new System.Drawing.Size(385, 26);
-            this.problemiTextBox.TabIndex = 18;
-            // 
-            // afati_kohor1Label
-            // 
-            afati_kohor1Label.AutoSize = true;
-            afati_kohor1Label.Location = new System.Drawing.Point(64, 366);
-            afati_kohor1Label.Name = "afati_kohor1Label";
-            afati_kohor1Label.Size = new System.Drawing.Size(88, 20);
-            afati_kohor1Label.TabIndex = 19;
-            afati_kohor1Label.Text = "afati kohor:";
-            // 
-            // afati_kohor1DateTimePicker
-            // 
-            this.afati_kohor1DateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.ceshtjaBindingSource, "afati_kohor1", true));
-            this.afati_kohor1DateTimePicker.Location = new System.Drawing.Point(175, 362);
-            this.afati_kohor1DateTimePicker.Name = "afati_kohor1DateTimePicker";
-            this.afati_kohor1DateTimePicker.Size = new System.Drawing.Size(385, 26);
-            this.afati_kohor1DateTimePicker.TabIndex = 20;
+            // punonjesiBindingSource
+            // 
+            this.punonjesiBindingSource.DataMember = "punonjesi";
+            this.punonjesiBindingSource.DataSource = this.esupportDataSetBindingSource;
+            // 
+            // btn_kthehu
+            // 
+            this.btn_kthehu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_kthehu.Location = new System.Drawing.Point(1128, 657);
+            this.btn_kthehu.Name = "btn_kthehu";
+            this.btn_kthehu.Size = new System.Drawing.Size(170, 50);
+            this.btn_kthehu.TabIndex = 24;
+            this.btn_kthehu.Text = "Kthehu";
+            this.btn_kthehu.UseVisualStyleBackColor = true;
+            this.btn_kthehu.Click += new System.EventHandler(this.btn_kthehu_Click);
+            // 
+            // cb_statusi
+            // 
+            this.cb_statusi.DataSource = this.statusiBindingSource;
+            this.cb_statusi.DisplayMember = "pershkrimi";
+            this.cb_statusi.FormattingEnabled = true;
+            this.cb_statusi.Location = new System.Drawing.Point(1031, 217);
+            this.cb_statusi.Name = "cb_statusi";
+            this.cb_statusi.Size = new System.Drawing.Size(198, 28);
+            this.cb_statusi.TabIndex = 26;
+            this.cb_statusi.ValueMember = "vlera";
+            // 
+            // statusiBindingSource
+            // 
+            this.statusiBindingSource.DataMember = "statusi";
+            this.statusiBindingSource.DataSource = this.e_supportDataSet;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(955, 220);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(59, 20);
+            this.label4.TabIndex = 29;
+            this.label4.Text = "Statusi";
+            // 
+            // txt_problemi
+            // 
+            this.txt_problemi.Location = new System.Drawing.Point(965, 327);
+            this.txt_problemi.Multiline = true;
+            this.txt_problemi.Name = "txt_problemi";
+            this.txt_problemi.Size = new System.Drawing.Size(333, 230);
+            this.txt_problemi.TabIndex = 30;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(955, 293);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(174, 20);
+            this.label5.TabIndex = 31;
+            this.label5.Text = "Shenime mbi problemin";
+            // 
+            // btn_faturo
+            // 
+            this.btn_faturo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_faturo.Location = new System.Drawing.Point(959, 657);
+            this.btn_faturo.Name = "btn_faturo";
+            this.btn_faturo.Size = new System.Drawing.Size(163, 50);
+            this.btn_faturo.TabIndex = 33;
+            this.btn_faturo.Text = "Faturo";
+            this.btn_faturo.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.prioritetiTextBox);
-            this.groupBox1.Controls.Add(id_ceshtjeLabel);
-            this.groupBox1.Controls.Add(this.afati_kohor1DateTimePicker);
-            this.groupBox1.Controls.Add(this.id_ceshtjeTextBox);
-            this.groupBox1.Controls.Add(afati_kohor1Label);
-            this.groupBox1.Controls.Add(id_klientiLabel);
-            this.groupBox1.Controls.Add(this.problemiTextBox);
-            this.groupBox1.Controls.Add(this.id_klientiTextBox);
-            this.groupBox1.Controls.Add(problemiLabel);
-            this.groupBox1.Controls.Add(id_pergjegjesiLabel);
-            this.groupBox1.Controls.Add(this.raportiTextBox);
-            this.groupBox1.Controls.Add(this.id_pergjegjesiTextBox);
-            this.groupBox1.Controls.Add(raportiLabel);
-            this.groupBox1.Controls.Add(id_sherbimiLabel);
-            this.groupBox1.Controls.Add(this.garanciTextBox);
-            this.groupBox1.Controls.Add(this.id_sherbimiTextBox);
-            this.groupBox1.Controls.Add(garanciLabel);
-            this.groupBox1.Controls.Add(prioritetiLabel);
-            this.groupBox1.Controls.Add(this.statusiTextBox);
-            this.groupBox1.Controls.Add(statusiLabel);
-            this.groupBox1.Location = new System.Drawing.Point(48, 99);
+            this.groupBox1.Controls.Add(this.rb_gjitha);
+            this.groupBox1.Controls.Add(this.rb_zgjidhur);
+            this.groupBox1.Controls.Add(this.rb_mbyllur);
+            this.groupBox1.Controls.Add(this.rb_vonese);
+            this.groupBox1.Controls.Add(this.rb_aktive);
+            this.groupBox1.Location = new System.Drawing.Point(939, 49);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(643, 458);
-            this.groupBox1.TabIndex = 21;
+            this.groupBox1.Size = new System.Drawing.Size(359, 146);
+            this.groupBox1.TabIndex = 34;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Ceshtje Ekzistente";
+            this.groupBox1.Text = "Filtro ceshtjet";
+            // 
+            // rb_gjitha
+            // 
+            this.rb_gjitha.AutoSize = true;
+            this.rb_gjitha.Checked = true;
+            this.rb_gjitha.Location = new System.Drawing.Point(200, 88);
+            this.rb_gjitha.Name = "rb_gjitha";
+            this.rb_gjitha.Size = new System.Drawing.Size(90, 24);
+            this.rb_gjitha.TabIndex = 4;
+            this.rb_gjitha.TabStop = true;
+            this.rb_gjitha.Text = "te gjitha";
+            this.rb_gjitha.UseVisualStyleBackColor = true;
+            this.rb_gjitha.CheckedChanged += new System.EventHandler(this.rb_gjitha_CheckedChanged);
+            // 
+            // rb_zgjidhur
+            // 
+            this.rb_zgjidhur.AutoSize = true;
+            this.rb_zgjidhur.Location = new System.Drawing.Point(70, 112);
+            this.rb_zgjidhur.Name = "rb_zgjidhur";
+            this.rb_zgjidhur.Size = new System.Drawing.Size(90, 24);
+            this.rb_zgjidhur.TabIndex = 3;
+            this.rb_zgjidhur.Text = "faturuar";
+            this.rb_zgjidhur.UseVisualStyleBackColor = true;
+            this.rb_zgjidhur.CheckedChanged += new System.EventHandler(this.rb_zgjidhur_CheckedChanged);
+            // 
+            // rb_mbyllur
+            // 
+            this.rb_mbyllur.AutoSize = true;
+            this.rb_mbyllur.Location = new System.Drawing.Point(70, 67);
+            this.rb_mbyllur.Name = "rb_mbyllur";
+            this.rb_mbyllur.Size = new System.Drawing.Size(83, 24);
+            this.rb_mbyllur.TabIndex = 2;
+            this.rb_mbyllur.Text = "mbyllur";
+            this.rb_mbyllur.UseVisualStyleBackColor = true;
+            this.rb_mbyllur.CheckedChanged += new System.EventHandler(this.rb_mbyllur_CheckedChanged);
+            // 
+            // rb_vonese
+            // 
+            this.rb_vonese.AutoSize = true;
+            this.rb_vonese.Location = new System.Drawing.Point(200, 46);
+            this.rb_vonese.Name = "rb_vonese";
+            this.rb_vonese.Size = new System.Drawing.Size(111, 24);
+            this.rb_vonese.TabIndex = 1;
+            this.rb_vonese.Text = "me vonese";
+            this.rb_vonese.UseVisualStyleBackColor = true;
+            this.rb_vonese.CheckedChanged += new System.EventHandler(this.rb_vonese_CheckedChanged);
+            // 
+            // rb_aktive
+            // 
+            this.rb_aktive.AutoSize = true;
+            this.rb_aktive.Location = new System.Drawing.Point(70, 28);
+            this.rb_aktive.Name = "rb_aktive";
+            this.rb_aktive.Size = new System.Drawing.Size(75, 24);
+            this.rb_aktive.TabIndex = 0;
+            this.rb_aktive.Text = "aktive";
+            this.rb_aktive.UseVisualStyleBackColor = true;
+            this.rb_aktive.CheckedChanged += new System.EventHandler(this.rb_aktive_CheckedChanged);
+            // 
+            // btn_raport
+            // 
+            this.btn_raport.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_raport.Location = new System.Drawing.Point(959, 588);
+            this.btn_raport.Name = "btn_raport";
+            this.btn_raport.Size = new System.Drawing.Size(163, 50);
+            this.btn_raport.TabIndex = 35;
+            this.btn_raport.Text = "Raporti PDF ";
+            this.btn_raport.UseVisualStyleBackColor = true;
+            this.btn_raport.Click += new System.EventHandler(this.btn_raport_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(955, 256);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(66, 20);
+            this.label2.TabIndex = 37;
+            this.label2.Text = "Prioriteti";
+            // 
+            // cb_prioriteti
+            // 
+            this.cb_prioriteti.DataSource = this.prioritetiBindingSource;
+            this.cb_prioriteti.DisplayMember = "vlera";
+            this.cb_prioriteti.FormattingEnabled = true;
+            this.cb_prioriteti.Location = new System.Drawing.Point(1031, 253);
+            this.cb_prioriteti.Name = "cb_prioriteti";
+            this.cb_prioriteti.Size = new System.Drawing.Size(198, 28);
+            this.cb_prioriteti.TabIndex = 36;
+            this.cb_prioriteti.ValueMember = "vlera";
+            // 
+            // prioritetiBindingSource
+            // 
+            this.prioritetiBindingSource.DataMember = "prioriteti";
+            this.prioritetiBindingSource.DataSource = this.esupportDataSetBindingSource;
+            // 
+            // grid_analize_ceshtjesh
+            // 
+            this.grid_analize_ceshtjesh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grid_analize_ceshtjesh.Location = new System.Drawing.Point(34, 55);
+            this.grid_analize_ceshtjesh.Name = "grid_analize_ceshtjesh";
+            this.grid_analize_ceshtjesh.ReadOnly = true;
+            this.grid_analize_ceshtjesh.RowHeadersWidth = 62;
+            this.grid_analize_ceshtjesh.RowTemplate.Height = 28;
+            this.grid_analize_ceshtjesh.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.grid_analize_ceshtjesh.Size = new System.Drawing.Size(867, 502);
+            this.grid_analize_ceshtjesh.TabIndex = 38;
+            this.grid_analize_ceshtjesh.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_analize_ceshtjesh_CellClick);
+            // 
+            // statusiTableAdapter
+            // 
+            this.statusiTableAdapter.ClearBeforeFill = true;
+            // 
+            // prioritetiTableAdapter
+            // 
+            this.prioritetiTableAdapter.ClearBeforeFill = true;
+            // 
+            // btn_update
+            // 
+            this.btn_update.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_update.Location = new System.Drawing.Point(1128, 588);
+            this.btn_update.Name = "btn_update";
+            this.btn_update.Size = new System.Drawing.Size(170, 50);
+            this.btn_update.TabIndex = 39;
+            this.btn_update.Text = "Update";
+            this.btn_update.UseVisualStyleBackColor = true;
+            this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
+            // 
+            // punonjesiTableAdapter
+            // 
+            this.punonjesiTableAdapter.ClearBeforeFill = true;
+            // 
+            // punonjes_infoTableAdapter
+            // 
+            this.punonjes_infoTableAdapter.ClearBeforeFill = true;
             // 
             // Ceshtje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1254, 678);
+            this.ClientSize = new System.Drawing.Size(1350, 780);
+            this.Controls.Add(this.btn_update);
+            this.Controls.Add(this.grid_analize_ceshtjesh);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.cb_prioriteti);
+            this.Controls.Add(this.btn_raport);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.ceshtjaBindingNavigator);
+            this.Controls.Add(this.btn_faturo);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.txt_problemi);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.cb_statusi);
+            this.Controls.Add(this.btn_kthehu);
+            this.Controls.Add(this.gb_delegim);
+            this.Controls.Add(this.gb_afatshtyrje);
             this.Name = "Ceshtje";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Ceshtje";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.Ceshtje_Load);
+            this.gb_afatshtyrje.ResumeLayout(false);
+            this.gb_delegim.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.punonjesinfoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.esupportDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.e_supportDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ceshtjaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ceshtjaBindingNavigator)).EndInit();
-            this.ceshtjaBindingNavigator.ResumeLayout(false);
-            this.ceshtjaBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.punonjesiBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.statusiBindingSource)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.prioritetiBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_analize_ceshtjesh)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private e_supportDataSet e_supportDataSet;
-        private System.Windows.Forms.BindingSource ceshtjaBindingSource;
-        private e_supportDataSetTableAdapters.ceshtjaTableAdapter ceshtjaTableAdapter;
-        private e_supportDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.BindingNavigator ceshtjaBindingNavigator;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
-        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
-        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton ceshtjaBindingNavigatorSaveItem;
-        private System.Windows.Forms.TextBox id_ceshtjeTextBox;
-        private System.Windows.Forms.TextBox id_klientiTextBox;
-        private System.Windows.Forms.TextBox id_pergjegjesiTextBox;
-        private System.Windows.Forms.TextBox id_sherbimiTextBox;
-        private System.Windows.Forms.TextBox prioritetiTextBox;
-        private System.Windows.Forms.TextBox statusiTextBox;
-        private System.Windows.Forms.TextBox garanciTextBox;
-        private System.Windows.Forms.TextBox raportiTextBox;
-        private System.Windows.Forms.TextBox problemiTextBox;
-        private System.Windows.Forms.DateTimePicker afati_kohor1DateTimePicker;
+        private System.Windows.Forms.GroupBox gb_afatshtyrje;
+        private System.Windows.Forms.GroupBox gb_delegim;
+        private System.Windows.Forms.Button btn_kthehu;
+        private System.Windows.Forms.DateTimePicker dt_kerkese;
+        private System.Windows.Forms.ComboBox cb_pergjegjesit;
+        private System.Windows.Forms.ComboBox cb_statusi;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txt_problemi;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btn_faturo;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton rb_zgjidhur;
+        private System.Windows.Forms.RadioButton rb_mbyllur;
+        private System.Windows.Forms.RadioButton rb_vonese;
+        private System.Windows.Forms.RadioButton rb_aktive;
+        private System.Windows.Forms.Button btn_raport;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox cb_prioriteti;
+        private System.Windows.Forms.DataGridView grid_analize_ceshtjesh;
+        private System.Windows.Forms.RadioButton rb_gjitha;
+        private e_supportDataSet e_supportDataSet;
+        private System.Windows.Forms.BindingSource statusiBindingSource;
+        private e_supportDataSetTableAdapters.statusiTableAdapter statusiTableAdapter;
+        private System.Windows.Forms.BindingSource esupportDataSetBindingSource;
+        private System.Windows.Forms.BindingSource prioritetiBindingSource;
+        private e_supportDataSetTableAdapters.prioritetiTableAdapter prioritetiTableAdapter;
+        private System.Windows.Forms.Button btn_update;
+        private System.Windows.Forms.BindingSource punonjesiBindingSource;
+        private e_supportDataSetTableAdapters.punonjesiTableAdapter punonjesiTableAdapter;
+        private System.Windows.Forms.Button btn_shtyj;
+        private System.Windows.Forms.Button btn_delego;
+        private System.Windows.Forms.BindingSource punonjesinfoBindingSource;
+        private e_supportDataSetTableAdapters.punonjes_infoTableAdapter punonjes_infoTableAdapter;
     }
 }

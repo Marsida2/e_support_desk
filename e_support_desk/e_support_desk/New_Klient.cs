@@ -51,6 +51,7 @@ namespace e_support_desk
                 MessageBox.Show(this, "Te dhena ta paplotesuara!", "ERROR");
                 return;
             }
+            string fjalekalimi = gjenero_fjalekalim();
 
             using (SqlConnection conn = new SqlConnection(conn_string))
             {
@@ -63,13 +64,15 @@ namespace e_support_desk
                 cmd.Parameters.AddWithValue("@mb", textBox2.Text);
                 cmd.Parameters.AddWithValue("@email", textBox3.Text);
                 cmd.Parameters.AddWithValue("@tel", textBox4.Text);
-                cmd.Parameters.AddWithValue("@fjkl", gjenero_fjalekalim());
+                cmd.Parameters.AddWithValue("@fjkl", fjalekalimi);
                 int new_id;
                 try
                 {
                     conn.Open();
                     new_id = (int)cmd.ExecuteScalar();
                     MessageBox.Show(this, "Klienti u shtua me sukses!" + new_id, "SUKSES");
+                    Mailer mailer = new Mailer();
+                    mailer.Dergo_email(textBox3.Text, Tipi.kredenciale, fjalekalimi);
                     this.Close();
                 }
                 catch (Exception ex)

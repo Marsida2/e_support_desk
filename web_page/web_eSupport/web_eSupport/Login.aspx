@@ -9,7 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>       
-    
+    <link rel="stylesheet" href="style1.css" type="text/css">
 </head>
 <body>
 
@@ -19,42 +19,37 @@
     </div>
 
     <div class="container">
-        <form id="form1" runat="server">
-            <div>
-                <table class="col-md-8 mx-auto">
-                    <tr>
-                        <td>
-                            <asp:Label ID="Label1" runat="server" Text="Email"></asp:Label>
-                        </td>
-                        <td>
-                            <asp:TextBox ID="txt_email" runat="server" Width="276px" Height="25px"></asp:TextBox>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <asp:Label ID="Label2" runat="server" Text="Fjalekalimi"></asp:Label>
-                        </td>
-                        <td>
-                            <asp:TextBox ID="txt_fjalekalimi" runat="server" Width="276px" Height="25px"></asp:TextBox>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        </td>
-                        <td>
-                            <asp:Button ID="btn_hyr" runat="server" Text="Hyr" OnClick="btn_hyr_Click" Width="110px" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        </td>
-                        <td>
-                            <asp:Label ID="lbl_error_msg" Visible="False" runat="server" Text="Te dhenat nuk jane te sakta!" ForeColor="Red"></asp:Label>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </form>
+		<div class="d-flex justify-content-center h-100">
+			<div class="user_card bg-primary">
+				<div class="d-flex justify-content-center">
+					<div class="brand_logo_container">
+						<a href="index.aspx" > <img src="Images\e3.png" class="brand_logo" alt="Logo"></a>
+		</div>
+		</div>
+		<div class="d-flex justify-content-center form_container">
+		<form runat="server">
+		<div class="input-group mb-3">
+		<div class="input-group-append">
+		<span class="input-group-text"><i class="fas fa-user"></i></span>
+		</div>
+		<input type="text" name="" class="form-control input_user" value="" placeholder="emaili" id="txt_email" runat="server">
+		</div>
+		<div class="input-group mb-2">
+		<div class="input-group-append">
+		<span class="input-group-text"><i class="fas fa-key"></i></span>
+		</div>
+		<input type="password" name="" class="form-control input_pass" value="" placeholder="fjalekalimi" id="txt_fjalekalimi" runat="server">
+		</div>
+		
+		</div>
+		<div class="d-flex justify-content-center mt-3 login_container">
+            <asp:Button ID="btn_hyr" name="button" class="btn login_btn" runat="server" Text="Login" OnClick="btn_hyr_Click1" />
+		</div>
+		</form>
+		<div class="d-flex justify-content-center links" runat="server" id="lbl_error_msg">
+		</div>
+		</div>
+		</div>
     </div>
 </body>
 </html>

@@ -147,7 +147,7 @@ namespace e_support_desk
 
         private void btn_cesh_hapur_Click(object sender, EventArgs e)
         {
-            Ceshtje ceshtjet = new Ceshtje(conn_string);
+            Ceshtje ceshtjet = new Ceshtje(conn_string, id_perdoruesi);
             this.Visible = false;
             ceshtjet.ShowDialog();
             this.Visible = true;

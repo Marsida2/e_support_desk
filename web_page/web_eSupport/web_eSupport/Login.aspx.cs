@@ -14,25 +14,26 @@ namespace web_eSupport
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
 
-        protected void btn_hyr_Click(object sender, EventArgs e)
+
+        protected void btn_hyr_Click1(object sender, EventArgs e)
         {
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["connection"].ToString());
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = conn;
             cmd.CommandText = "Select id_klienti from klienti where email=@email and fjalekalimi=@fjalekalimi";
             cmd.CommandType = CommandType.Text;
-            cmd.Parameters.AddWithValue("@email", txt_email.Text.Trim());
-            cmd.Parameters.AddWithValue("@fjalekalimi", txt_fjalekalimi.Text.Trim());
+            cmd.Parameters.AddWithValue("@email", txt_email.Value.Trim());
+            cmd.Parameters.AddWithValue("@fjalekalimi", txt_fjalekalimi.Value.Trim());
             int id_klienti = 0;
             try
             {
                 conn.Open();
                 if (cmd.ExecuteScalar() == null)
                 {
-                    lbl_error_msg.Text = "Te dhena te gabuara!";
+                    lbl_error_msg.InnerText = "Te dhena te gabuara!";
                     lbl_error_msg.Visible = true;
                     return;
                 }
@@ -42,7 +43,7 @@ namespace web_eSupport
             }
             catch (Exception ex)
             {
-                lbl_error_msg.Text = ex.Message;
+                lbl_error_msg.InnerText = ex.Message;
                 lbl_error_msg.Visible = true;
                 return;
             }

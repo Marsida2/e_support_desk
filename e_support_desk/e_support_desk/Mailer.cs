@@ -9,6 +9,8 @@ using Limilabs.Mail;
 using System.Net.Mail;
 using System.Configuration;
 using System.Net;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace e_support_desk
 {
@@ -45,10 +47,10 @@ namespace e_support_desk
             Start_receiving();
         }
 
-        private void Dergo_email(string to, Tipi tipi, string str1="", string str2 = "")
+        public void Dergo_email(string to, Tipi tipi, string str1="", string str2 = "")
         {
             string subject, body;
-
+            
             switch (tipi)
             {
                 case Tipi.kredenciale:
@@ -65,18 +67,54 @@ namespace e_support_desk
                     body = "Ceshtja me te dhenat e meposhtme sapo u krijua.\n" +
                             "ID ceshtje: " + str1 + "\n" +
                             "Problemi: " + str2 + "\n" +
-                            "Ju mund te nqiqni ecurine e ceshtjes ne faqen tone online ose duke na shkruar email me ID e ceshtjes ne subjekt." +
-                            "Faleminerit";
+                            "Ju mund te nqiqni ecurine e ceshtjes ne faqen tone online ose duke na shkruar email me ID e ceshtjes ne subjekt.\n" +
+                            "Faleminderit";
                     break;
+
                 case Tipi.rap_ceshtje:
                     subject = "Ceshtje ne E-Support";
-                    body = "Gjendja e ceshtjes " + str1 + "eshte si me poshte :\n" +
-                            str2 + "\nFaleminderit";
+                    body = "I nderuar klient,\n" +
+                            "Ne llogarine tuaj nuk ekziston ceshtje me id " + str1 + "!\n" +
+                            "Ju lutem rishikoni emilet e meparshme.\n" +
+                            "Faleminderit!";
+                    //marrim te dhenat e ceshtjes nga databaza
+                    SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["e_support_conn_string"].ToString());
+                    SqlCommand cmd = new SqlCommand();
+                    cmd.Connection = conn;
+                    cmd.CommandText = "analize_ceshtje";
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("id", str1);
+                    cmd.Parameters.AddWithValue("email", to);
+                    try
+                    {
+                        conn.Open();
+                        SqlDataReader reader = cmd.ExecuteReader();
+                        while (reader.Read())
+                        {
+                            body = "Pershendetje " + reader["klienti"].ToString() + "!\n";
+                            body += "Gjendja e ceshtjes nr." + str1 + " eshte si me poshte :\n";
+                            body += "Ceshtja: " + reader["lloji"].ToString() + "\n";
+                            body += "Statusi: " + reader["pershkrimi"].ToString() + "\n";
+                            body += "Afati kohor: " + reader["afati_kohor"].ToString() + "\n";
+                            body += "Pergjegjesi: " + reader["pergjegjesi"].ToString() + "\n";
+                            body += "Faleminderit!"; 
+                        }
+                        reader.Close();
+                        conn.Close();
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                        return;
+                    }                    
                     break;
+
                 default:
                     subject = "E-Support";
-                    body = "Ky eshte mesazh automatik!\n" +
-                        "Per me shume informacion vizitoni faqen tone online.\n" +
+                    body = "I nderuar klient,\n" +
+                        "Mesazhi juaj nuk perpputhet me kriteret e pergjigjeve automatike!\n" +
+                        "Per tu informuar rreth ceshtjeve tuaja dergoni ne subject ID e ceshtjes.\n" +
+                        "Na vizitoni faqen tone onlin e.\n" +
                         "Faleminderit!";
                     break;
             }
@@ -104,31 +142,27 @@ namespace e_support_desk
 
         private void Read_unseen()
         {
-            using (Imap imap = new Imap())
-            {
-                imap.ConnectSSL("imap.gmail.com");
-                imap.UseBestLogin("esuppdesk@gmail.com", "Q1w2e3r4.");
-                imap.SelectInbox();
-                List<long> uids = imap.Search(Flag.Unseen);
+            Task.Run(() =>
+           {
+               using (Imap imap = new Imap())
+               {
+                   imap.ConnectSSL("imap.gmail.com");
+                   imap.UseBestLogin(email, fjalekalimi);
+                   imap.SelectInbox();
+                   List<long> uids = imap.Search(Flag.Unseen);
 
-                foreach (long uid in uids)
-                {
-                    var eml = imap.GetMessageByUID(uid);
-                    IMail email = new MailBuilder()
-                        .CreateFromEml(eml);
-                    int id = Lexo_id_ceshtje(email.Subject);
-                    if(id != 0)
-                    {
-                        Dergo_email(email.Sender.ToString(), Tipi.rap_ceshtje, id.ToString(), "Te dhenat mbi ecurine e ceshtjes");
-                        continue;
-                    }
-                    else
-                    {
-                        Dergo_email(email.Sender.ToString(), Tipi.automatik);
-                    }
-                }
-                imap.Close();
-            }
+                   foreach (long uid in uids)
+                   {
+                       var eml = imap.GetMessageByUID(uid);
+                       IMail email = new MailBuilder().CreateFromEml(eml);
+                       int id = Lexo_id_ceshtje(email.Subject.Trim());
+                       if (id != 0)
+                           Dergo_email(email.From.ToString(), Tipi.rap_ceshtje, id.ToString(), "Te dhenat mbi ecurine e ceshtjes");
+                       else
+                           Dergo_email(email.From.ToString(), Tipi.automatik);
+                   }
+               }
+            });
         }
 
         private int Lexo_id_ceshtje(string subject)

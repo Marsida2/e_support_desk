@@ -19,10 +19,12 @@ namespace e_support_desk
                 set;
             }
 
-            public Klient(string emri, int id)
+           
+        public Klient(string emri, int id)
             {
                 Emri = emri;
                 Id = id;
+
             }
     }
 }

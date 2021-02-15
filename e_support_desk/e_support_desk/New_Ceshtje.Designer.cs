@@ -58,6 +58,8 @@ namespace e_support_desk
             this.cb_klienti = new System.Windows.Forms.ComboBox();
             this.btn_hap_cesh = new System.Windows.Forms.Button();
             this.btn_cesh_re = new System.Windows.Forms.Button();
+            this.punonjesinfoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.punonjes_infoTableAdapter = new e_support_desk.e_supportDataSetTableAdapters.punonjes_infoTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.e_supportDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.prioritetiBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sherbimiBindingSource)).BeginInit();
@@ -66,6 +68,7 @@ namespace e_support_desk
             ((System.ComponentModel.ISupportInitialize)(this.prioritetiBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.esupportDataSetBindingSource)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.punonjesinfoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -220,8 +223,8 @@ namespace e_support_desk
             // 
             this.cb_pergjegjesi.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.cb_pergjegjesi.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cb_pergjegjesi.DataSource = this.punonjesiBindingSource;
-            this.cb_pergjegjesi.DisplayMember = "emri";
+            this.cb_pergjegjesi.DataSource = this.punonjesinfoBindingSource;
+            this.cb_pergjegjesi.DisplayMember = "punonjesi";
             this.cb_pergjegjesi.FormattingEnabled = true;
             this.cb_pergjegjesi.Location = new System.Drawing.Point(213, 123);
             this.cb_pergjegjesi.Name = "cb_pergjegjesi";
@@ -317,6 +320,15 @@ namespace e_support_desk
             this.btn_cesh_re.UseVisualStyleBackColor = true;
             this.btn_cesh_re.Click += new System.EventHandler(this.btn_cesh_re_Click);
             // 
+            // punonjesinfoBindingSource
+            // 
+            this.punonjesinfoBindingSource.DataMember = "punonjes_info";
+            this.punonjesinfoBindingSource.DataSource = this.esupportDataSetBindingSource;
+            // 
+            // punonjes_infoTableAdapter
+            // 
+            this.punonjes_infoTableAdapter.ClearBeforeFill = true;
+            // 
             // New_Ceshtje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -339,6 +351,7 @@ namespace e_support_desk
             ((System.ComponentModel.ISupportInitialize)(this.esupportDataSetBindingSource)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.punonjesinfoBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -373,5 +386,7 @@ namespace e_support_desk
         private System.Windows.Forms.Button btn_hap_cesh;
         private System.Windows.Forms.ComboBox cb_klienti;
         private System.Windows.Forms.Button btn_cesh_re;
+        private System.Windows.Forms.BindingSource punonjesinfoBindingSource;
+        private e_supportDataSetTableAdapters.punonjes_infoTableAdapter punonjes_infoTableAdapter;
     }
 }
